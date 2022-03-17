@@ -6,7 +6,7 @@ export default () => {
 
   server.use(express.urlencoded({ extended: false }));
   server.set('view engine', 'ejs');
-  server.set('views', path.join(process.cwd(), 'src/views'));
+  server.set('views', path.join(process.cwd(), 'src/views/pages'));
   server.use('/static', express.static(path.join(process.cwd(), 'public')));
 
   return server;
