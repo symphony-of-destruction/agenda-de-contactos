@@ -14,7 +14,7 @@ class Server {
     this.expressInstance.use(express.urlencoded({ extended: false }));
     this.expressInstance.use(this.controller);
     this.expressInstance.use(
-      'public',
+      '/static',
       express.static(path.join(process.cwd(), 'public')),
     );
   }
