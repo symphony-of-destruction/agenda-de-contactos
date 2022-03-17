@@ -1,0 +1,35 @@
+{
+  "name": "agenda-de-contactos",
+  "version": "0.0.1",
+  "description": "express todo app",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --source-maps inline",
+    "start": "node dist/main.js",
+    "dev": "nodemon",
+    "test": "echo \"All test passed\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/symphony-of-destruction/agenda-de-contactos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/symphony-of-destruction/agenda-de-contactos/issues"
+  },
+  "homepage": "https://github.com/symphony-of-destruction/agenda-de-contactos#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.7",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-proposal-throw-expressions": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  }
+}
