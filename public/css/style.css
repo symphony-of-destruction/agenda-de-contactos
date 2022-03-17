@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url('/static/fonts/Ubuntu Mono.ttf') format('TrueType');
+}
+
+* {
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.full-width {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 100vh;
+
+  font-size: 4rem;
+}
