@@ -13,6 +13,8 @@ class Server {
 
     this.expressInstance.use(express.urlencoded({ extended: false }));
     this.expressInstance.use(this.controller);
+    this.expressInstance.set('view engine', 'ejs');
+    this.expressInstance.set('views', path.join(process.cwd(), 'src/view'));
     this.expressInstance.use(
       '/static',
       express.static(path.join(process.cwd(), 'public')),
