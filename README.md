@@ -11,7 +11,7 @@ Man prepares to meet his destiny, yeah
 
 ## Local Environment
 
-Local variable are be loader from .env.local file\ 
+Local variable are be loader from .env.local file \
 to generate "auth_key" I recommend to use Python secrets library
 
 ```python
