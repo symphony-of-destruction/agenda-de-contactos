@@ -13,7 +13,7 @@ export default (config) => {
       secret: config.get('auth_key'),
       resave: false,
       saveUninitialized: true,
-      cookie: { secure: true },
+      cookie: { identify: '', password: '' },
     }),
   );
   server.use('/static', express.static(path.join(process.cwd(), 'public')));
