@@ -6,7 +6,7 @@ import useController from './controllers/index.controller';
 class App {
   constructor(configStorage) {
     this.config = configStorage;
-    this.server = createServer();
+    this.server = createServer(this.config);
     useController(this.server);
   }
 
