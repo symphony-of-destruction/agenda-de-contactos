@@ -1,0 +1,20 @@
+### Test session
+POST http://127.0.0.1:8080/logut
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "mock",
+  "password": "",
+  "data" : []
+}
+
+### 
+POST http://127.0.0.1:8080/sigin
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "mock",
+  "password": ""
+}
