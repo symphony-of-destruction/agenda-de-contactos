@@ -1,1 +1,6 @@
-{"users":[{"name":"mock","password":"","data":[]},{"name":"eduan@itla.edu.do","password":"mypass","data":[]}]}
+{
+  "users": [
+    { "name": "mock", "password": "", "data": [] },
+    { "name": "eduan@itla.edu.do", "password": "mypass", "data": [] }
+  ]
+}
