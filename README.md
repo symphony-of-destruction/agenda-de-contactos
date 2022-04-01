@@ -20,3 +20,5 @@ to generate "auth_key" I recommend to use Python secrets library
 import secrets
 secrets.token_urlsafe(14)
 ```
+
+[What Really Happened](https://youtu.be/B2lmOei7qfk)

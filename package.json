@@ -1,10 +1,11 @@
 {
   "name": "agenda-de-contactos",
-  "version": "0.0.1",
+  "version": "6.1.6",
   "description": "express todo app",
   "main": "src/index.js",
   "scripts": {
     "build": "babel src --out-dir dist --source-maps inline",
+    "heroku-postbuild": "npm run build",
     "start": "node dist/main.js",
     "dev": "nodemon",
     "test": "echo \"All test passed\" && exit 0"
@@ -23,14 +24,14 @@
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
-    "express-session": "^1.17.2"
+    "express-session": "^1.17.2",
+    "express-session-sqlite": "^2.0.10",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.7",
     "@babel/node": "^7.16.8",
-    "@babel/plugin-proposal-throw-expressions": "^7.16.7",
-    "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "nodemon": "^2.0.15"
   }
