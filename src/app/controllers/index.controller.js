@@ -19,6 +19,8 @@ controller.get('/logout', async (req, res) => {
   return await authService.logout(req, res);
 });
 
+
+
 // API's route
 
 controller.post('/signin', async (req, res) => {
@@ -35,6 +37,10 @@ controller.post('/logut', (req, res) => {
   res.status(200).send('done');
 }); 
 */
+
+controller.use(async (req, res, next) => {
+  return res.status(404).render('404');
+});
 
 export default (app) => {
   app.use(controller);
