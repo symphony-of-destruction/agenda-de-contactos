@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body >
+    <div id="login">
+        
+        <br>
+        <form action="/signin" method="post">
+
+            <h1 id="sign">Sign In</h1>
+            <label for="email">Email address</label><br><br>
+            <input id="email" name="name" placeholder="Enter email" type="text">
+            <br><br>
+            <label for="password">Password</label>
+            <br>
+            <br>
+            <input id="password" name="password" placeholder="Enter password" type="password">
+            <br>
+            <br>
+            <input id="check" type="checkbox" name="check">
+            <label for="check">Remenber me</label>
+            <br><br>
+            <button id="submit" name="submit"  type="submit">Submit</button>
+
+            <p id="forgot">Forgot <a href="#" style="color: rgb(26, 116, 219);">passeword?</a></p>
+            <br>
+            <br>
+        
+        </form>
+        
+    </div>
+</body>
+</html>
