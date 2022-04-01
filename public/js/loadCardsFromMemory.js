@@ -51,10 +51,12 @@ function loadCardsFromMemory(){
       //Button Send Email
       const $emailContainer = document.createElement('TD');
       
-      const $emailButton = document.createElement('BUTTON');
+      const $emailButton = document.createElement('A');
       $emailButton.classList.add('btn', 'btn-info', 'text-white');
+      $emailButton.setAttribute('href',`mailto:${card.email}`);
       $emailButton.textContent = '✈ Send an Email';
       $emailContainer.appendChild($emailButton);
+      
 
 
       $row.appendChild( $id );
