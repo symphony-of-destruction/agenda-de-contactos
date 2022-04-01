@@ -15,9 +15,6 @@ export class ConfigStorage {
 
 export default class ConfigService {
   static readFile(envFile) {
-    if (process.env.NODE_ENV == 'production') {
-      return process.env;
-    }
 
     try {
       return Buffer.from(fs.readFileSync(envFile, 'utf-8'));
